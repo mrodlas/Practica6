@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_2">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imagenCentral"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/dinero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagenDolar"
+        android:layout_width="42dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/ic_pig_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvSendMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND MONEY"
+        app:layout_constraintTop_toBottomOf="@id/imagenDolar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="-13dp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/imagenDolar2"
+        android:layout_width="42dp"
+        android:layout_height="61dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/ic_pig_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvRequestMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REQUEST MONEY"
+        app:layout_constraintTop_toBottomOf="@id/imagenDolar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="-13dp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/imagenEscaner"
+        android:layout_width="42dp"
+        android:layout_height="61dp"
+        android:src="@drawable/ic_pig_3"
+        android:layout_marginLeft="85dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:tint="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvEscaner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN TO PAY"
+        app:layout_constraintTop_toBottomOf="@id/imagenEscaner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="-13dp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/imagenGrafica"
+        android:layout_width="42dp"
+        android:layout_height="61dp"
+        android:src="@drawable/ic_pig_4"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:tint="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvGrafica"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:text="REVIEW YOUR TRANSACTIONS"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/imagenGrafica"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="-13dp"
+        android:textColor="#FFFFFF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

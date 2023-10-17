@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagenAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/background_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botonEstrella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FF5BE4"
+        android:clickable="true"
+        android:contentDescription="estrella"
+        android:src="@drawable/ic_star"
+        app:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenAndroid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenAndroid" />
+
+    <ImageView
+        android:id="@+id/imagenTelefono"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenAndroid" />
+
+    <TextView
+        android:id="@+id/numeroTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:text="687100200"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imagenTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/imagenAndroid" />
+
+    <TextView
+        android:id="@+id/tvMovil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="1dp"
+        android:text="Movil"
+        android:textColor="#8F8F8F"
+        app:layout_constraintLeft_toRightOf="@+id/imagenTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/numeroTelefono"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imagenMensaje1"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_sms"
+        app:tint="#00877E"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagenAndroid" />
+
+    <TextView
+        android:id="@+id/NumeroTelefono2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:text="699500600"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imagenTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovil"  />
+
+    <TextView
+        android:id="@+id/tvMovil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="1dp"
+        android:text="Movil"
+        android:textColor="#8F8F8F"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumeroTelefono2" />
+
+    <ImageView
+        android:id="@+id/imagenMensaje2"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_sms"
+        app:tint="#00877E"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagenMensaje1"  />
+
+    <View
+        android:id="@+id/lineaDivisora"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/tvMovil2"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="85dp"/>
+
+    <ImageView
+        android:id="@+id/imagenEmail"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenTelefono" />
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineaDivisora"
+        android:text="info@gmail.com" />
+
+    <TextView
+        android:id="@+id/tvmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#8F8F8F"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvemail"
+        android:text="Mail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
